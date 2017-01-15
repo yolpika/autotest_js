@@ -1,0 +1,2 @@
+# Autotest trial for JavaScript
+
