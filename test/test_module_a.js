@@ -37,3 +37,5 @@ describe('Test Suite', function() {
     });
 
 });
+
+mock.stopAll();
