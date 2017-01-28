@@ -1,15 +1,17 @@
 'use strict';
 
+var mocha = require('mocha');
 var assert = require('assert');
 var rewire = require('rewire');
 var mock = require('mock-require');
 
 // This mocking-call must be done before the module which you want to mock 'required'.
-mock('../lib/glob.js', { uid: 'higehige' });
+mock('./build/lib/glob.js', { uid: 'higehige' });
 
 // Next. We know that module_a.js has priavate function in it.
 // To test it, now the target module must be 'require'd thru 'rewire'.
-var mod_a = rewire('../core/module_a.js');
+var mod_a = rewire('./build/core/ModuleA/index.js');
+
 
 describe('Test Suite', function() {
 

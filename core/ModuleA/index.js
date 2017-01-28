@@ -1,6 +1,6 @@
 'use strict';
 
-const glob = require('../lib/glob.js');
+const glob = require('../../lib/glob.js');
 
 
 function privateOne(a, b) {

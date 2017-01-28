@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/yolpika/autotest_js#readme",
   "devDependencies": {
+    "del": "^2.2.2",
+    "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
